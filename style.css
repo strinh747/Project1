@@ -1,0 +1,41 @@
+
+.top-bar{
+    background: black;
+}
+.menu-text{
+    background-color:black;
+}
+li {
+    background: black;
+}
+a{
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+
+#backgroundMain{
+    background-image: url("../Project1/backgroundpic1.jpg");
+    background-size: cover;
+    height: 600px;
+}
+h1{
+    font-family: 'Merriweather', serif;
+    
+}
+p{
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+h6{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+    .card{
+    
+    border-radius: 20px;
+   
+}
+.button{
+    background: black;
+    border-radius: 20px;
+}
