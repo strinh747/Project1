@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dinner Time</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
@@ -40,26 +40,30 @@
         <div class="grid-container">
           <div class="grid-x grid-padding-x">
             <div class="medium-6 cell">
-              <label>Ingridients
-                <input type="text" placeholder="type here">
+              <label>Ingredients
+                <input type="text" id="food-search-input" placeholder="type here">
               </label>
+              
             </div>
-         <!--    <div class="medium-6 cell">
-              <label>Input Label
-                <input type="text" placeholder=".medium-6.cell">
-              </label>
-            </div> -->
+            <div class="medium-6 cell">
+              <a class="button secondary" id="food-add-button">Add</a>
+            </div>
           </div>
         </div>
       </form>
 
       <br>
-      
-      <div class="text-center">
-        <a class="button secondary">search</a>
-        </div>
+      <div id="food-button-storage">
+      </div>
 
-    
+
+      <div class="text-center">
+        <a class="button secondary" id="food-search-button">search</a>
+      </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
