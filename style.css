@@ -14,7 +14,17 @@ a{
 }
 
 #backgroundMain{
-    background-image: url("../Project1/backgroundpic1.jpg");
+    background-image: url("../Project1/images/backgroundpic1.jpg");
+    background-size: cover;
+    height: 600px;
+}
+#backgroundRecipe{
+    background-image:url("../Project1/images/backgroundpic1.jpg") ;
+    background-size: cover;
+    height: 600px;
+}
+#backgroundCocktail{
+    background-image: url("../Project1/images/cocktails.jpg");
     background-size: cover;
     height: 600px;
 }
@@ -30,12 +40,16 @@ h6{
     text-align: center;
     font-family: 'Merriweather', serif;
 }
-    .card{
-    
-    border-radius: 20px;
    
-}
+   
 .button{
+    background: black;
+    border-radius: 20px;
+}
+#container{
+    background: white;
+}
+.button2{
     background: black;
     border-radius: 20px;
 }
