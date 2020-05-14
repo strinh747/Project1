@@ -61,17 +61,18 @@ $(document).ready(function() {
     
             {
               jQuery.each( response, function( i, item ) {
+                var recipeId = item.id;
                 var divcell = $('<div class="cell">');
                 var divcard = $('<div class="card">');
                 var divcardsec = $('<div class="card-section">');
                 var recipeName = $("<h3>").text(item.title);
-                // var imageURL = $("<a>").attr("href", item.image).append(recipeName);
+                var recipeURl = $("<a>").attr("href", "single.html?recipeId="+recipeId).append(recipeName);
                 var Image = $("<img>").attr("src", item.image);
-                divcardsec.append(recipeName);
+                divcardsec.append(recipeURl);
                 divcard.append(Image,divcardsec);
                 divcell.append(divcard);
                 $("#ingredients-div").append(divcell);
-                var recipeId = item.id;
+                
 
                 $.ajax({
                     "async": true,
