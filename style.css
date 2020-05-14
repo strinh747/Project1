@@ -7,7 +7,9 @@
 }
 li {
     background: black;
+    color: white;
 }
+
 a{
     color: white;
     font-family: 'Merriweather', serif;

@@ -44,7 +44,7 @@ $(document).ready(function() {
             $("#title").append(recipeTitle,image,directions);
 
             jQuery.each(response.analyzedInstructions[0].steps, function( i, item ) {
-              var step = $("<li>").text(item.step);
+              var step = $("<li class='directions'>").text(item.step);
               $("#title").append(step);
             });
 
