@@ -47,18 +47,25 @@ $(document).ready(function() {
         var image = $("<img>").attr("src", drink.strDrinkThumb);
         var ingredientsHead = $("<h3>").text("Ingredients");
         
+        var measureList = [];
         var ingredientList = [];
         for(i=1;i<16;i++) {
           strIngredient = "strIngredient" + i;
+          strMeasure = "strMeasure" + i;
           console.log(strIngredient);
           ingredientList.push(drink[strIngredient]);
-          console.log(drink[strIngredient]);
-          console.log(ingredientList);
+          measureList.push(drink[strMeasure]);
+
         }
         var ingredients = $("<ul>");
         for(i=0;i<ingredientList.length; i++) {
           if (ingredientList[i]!== null) {
+            if (measureList[i] !== null) {
+              var li = $("<li>").text(measureList[i] + " " + ingredientList[i]);
+            } 
+            else {
             var li = $("<li>").text(ingredientList[i]);
+            }
             ingredients.append(li);
           }
         }
