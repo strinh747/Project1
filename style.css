@@ -5,10 +5,12 @@
 .menu-text{
     background-color:black;
 }
-li {
+ li {
+     color:white;
     background: black;
-    color: white;
-}
+    font-family: 'Merriweather', serif;
+    
+} 
 
 a{
     color: white;
@@ -51,17 +53,39 @@ h6{
 /* #container{
     background: white;
 } */
-#food-button-storage{
+/* #food-button-storage{
     
     background: black;
     border-radius: 20px;
 
+} */
+/* .back{
+    color: black;
+    background-color:white;
+} */
+/* #ingridients-div{
+  
+    color: black;
+    background-color: black;
+} */
+#cocktail-button-storage{
+    background: black;
+    border-radius: 20px;
 }
-.back{
+/*  .grid-container{
     background-color:white;
 }
-#ingridients-div{
-  
-    background-color: black;
-}
 
+#ingredients-div{
+    color:white;
+    background-color: white;
+} 
+ */
+ h3{
+     color: black;
+     font-family: 'Merriweather', serif;
+ }
+ h2{
+    color: black;
+    font-family: 'Merriweather', serif;
+ }
