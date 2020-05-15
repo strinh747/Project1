@@ -89,3 +89,7 @@ h6{
     color: black;
     font-family: 'Merriweather', serif;
  }
+ .callout{
+     background-color: black;
+     color: white;
+ }
