@@ -43,7 +43,7 @@ $(document).ready(function() {
             var image = $("<img>").attr("src", response.image);
             var directions = $("<h3>").text("Directions");
 
-            var instructions = $("<ul class='instructions'>");
+            var instructions = $("<ul class='instructions' style='text-align:center'>");
             jQuery.each(response.analyzedInstructions[0].steps, function( i, item ) {
               var step = $("<li>").text(item.step);
               instructions.append(step);
