@@ -1,4 +1,4 @@
-# Project1
+# Project1 Dinner Time
 
 ## User Story
 
@@ -15,16 +15,14 @@ So that I can take full advantage of my limited ingredients to cook a good meal 
 
 ```
 GIVEN a recipe search site with form inputs
-WHEN I search for an ingredient
-THEN I am presented with 
-WHEN I view recipe card
+WHEN I add an ingredient
+THEN I am presented with the ingredient appended below the add input form, and
+THEN I am presented with a grid display of recipes.
+WHEN I view food recipe card
 THEN I am presented with the recipe name, recipe description, and recipe image
-WHEN I view cocktail card
+WHEN I view cocktail recipe card
 THEN I am presented with cocktail name and cocktail image
-WHEN I view 
-THEN I am presented with 
-WHEN I click on 
-THEN I am presented with
-WHEN I open the 
-THEN I am presented with 
+WHEN I click on a recipe card 
+THEN I am presented with a new page with the detailed recipe
+
 ```
