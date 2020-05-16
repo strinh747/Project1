@@ -38,32 +38,50 @@ $(document).ready(function() {
         } 
         $.ajax(settings).done(function (response) {
             console.log(response);
+
             var recipeTitle = $("<h2>").text(response.title);
             var image = $("<img>").attr("src", response.image);
             var directions = $("<h3>").text("Directions");
-            $("#title").append(recipeTitle,image,directions);
 
+            var instructions = $("<ul class='instructions'>");
             jQuery.each(response.analyzedInstructions[0].steps, function( i, item ) {
-              var step = $("<li class='directions'>").text(item.step);
-              $("#title").append(step);
+              var step = $("<li>").text(item.step);
+              instructions.append(step);
             });
+            $("#title").append(recipeTitle,image,directions,instructions);
 
             
-            console.log(response.extendedIngredients);
+            var ingredientsHead = $("<h3>").text("Ingredients");
+            $("#spoonacular-ingredient-vis-grid").append(ingredientsHead);
 
             
             jQuery.each(response.extendedIngredients, function( i, item ) {
-              var itemDiv = $('<div class="small-10 medium-3 columns">');
-              
+              var itemDiv = $('<div style="float:left">');
+              var itemIngredient = $('<div class="spoonacular-ingredient">');
+              var itemUnit = $('<div class="spoonacular-amount t12 spoonacular-us" style="display:block;">').text(item.amount+" "+item.unit);
+              var itemDivImg =$('<div class="spoonacular-image-wrapper">');
               var image = $("<img>").attr("src", "https://spoonacular.com/cdn/ingredients_100x100/"+item.image);
-              var itemName = $("<h4>").text(item.name);
-              var itemOriginal = $("<h6>").text(item.original);
-              var amount = $("<h6>").text(item.amount);
-              var unit = $("<h6>").text(item.unit);
-              itemDiv.append(image,itemName,itemOriginal,amount, unit);
-              $("#card-divider").append(itemDiv);
+              var itemOriginal = $('<div class="spoonacular-name t10">').text(item.original);
               
+              itemDivImg.append(image);
+              itemIngredient.append(itemUnit,itemDivImg,itemOriginal);
+              itemDiv.append(itemIngredient);
+
+              $("#spoonacular-ingredient-vis-grid").append(itemDiv);
             });
+
+            
+
+            /*
+            <div style="float:left">
+              <div class="spoonacular-ingredient">
+                <div class="spoonacular-amount t12 spoonacular-metric" style="display:none;" amount="6.0">6 </div>
+                <div class="spoonacular-amount t12 spoonacular-us" style="display:block;" amount="6.0">6 </div>
+                <div class="spoonacular-image-wrapper"><img src="https://spoonacular.com/cdn/ingredients_100x100/hard-boiled-egg.png" title="6  hardboiled eggs" alt="6  hardboiled eggs" /></div>
+                <div class="spoonacular-name t10">hardboiled eggs</div>
+              </div>
+            </div>
+            */
             
 
         });
