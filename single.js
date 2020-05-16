@@ -70,20 +70,6 @@ $(document).ready(function() {
               $("#spoonacular-ingredient-vis-grid").append(itemDiv);
             });
 
-            
-
-            /*
-            <div style="float:left">
-              <div class="spoonacular-ingredient">
-                <div class="spoonacular-amount t12 spoonacular-metric" style="display:none;" amount="6.0">6 </div>
-                <div class="spoonacular-amount t12 spoonacular-us" style="display:block;" amount="6.0">6 </div>
-                <div class="spoonacular-image-wrapper"><img src="https://spoonacular.com/cdn/ingredients_100x100/hard-boiled-egg.png" title="6  hardboiled eggs" alt="6  hardboiled eggs" /></div>
-                <div class="spoonacular-name t10">hardboiled eggs</div>
-              </div>
-            </div>
-            */
-            
-
         });
       }
 })

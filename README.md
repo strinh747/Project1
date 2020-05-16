@@ -7,7 +7,7 @@ As a Hungry and Thirsty User during a pandemic,
 
 I want make the perfect meal and cocktail based on what I have in my pantry,
 
-So that I can take full advantage of my limited ingredients to cook a good meal and have a good time.
+So that I can limit my trips to the grocery store and keep my family fed and safe from COVID-19.
 
 ```
 

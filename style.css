@@ -10,7 +10,6 @@
 li {
     color:white;
     background: black;
-    /*font-family: 'Merriweather', serif;*/
 } 
 
 
@@ -61,37 +60,12 @@ h6{
     background: black;
     border-radius: 20px;
 }
-/* #container{
-    background: white;
-} */
-/* #food-button-storage{
-    
-    background: black;
-    border-radius: 20px;
 
-} */
-/* .back{
-    color: black;
-    background-color:white;
-} */
-/* #ingridients-div{
-  
-    color: black;
-    background-color: black;
-} */
 #cocktail-button-storage{
     background: black;
     border-radius: 20px;
 }
-/*  .grid-container{
-    background-color:white;
-}
 
-#ingredients-div{
-    color:white;
-    background-color: white;
-} 
- */
  h3{
      color: black;
      font-family: 'Merriweather', serif;
