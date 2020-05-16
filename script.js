@@ -127,9 +127,6 @@ $(document).ready(function() {
             }
 
           }
-          else {
-            // setResponse("Please provide me more ingredients.");
-          }
     
         });
       }
@@ -168,9 +165,6 @@ $(document).ready(function() {
             });
           }
 
-        }
-        else {
-          // setResponse("Please provide me more ingredients.");
         }
   
       });
