@@ -1,0 +1,109 @@
+
+.top-bar{
+    background: black;
+}
+.menu-text{
+    background-color:black;
+}
+ 
+
+li {
+    color:white;
+    background: black;
+    /*font-family: 'Merriweather', serif;*/
+} 
+
+
+.instructions {
+    color:white;
+    background: white;
+    text-align: left;
+    list-style-type: none;
+    margin: 15px;
+    padding: 5px;
+} 
+
+a{
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+
+#backgroundMain{
+    background-image: url("../Project1/images/backgroundpic1.jpg");
+    background-size: cover;
+    height: 600px;
+}
+#backgroundRecipe{
+    background-image:url("../Project1/images/backgroundpic1.jpg") ;
+    background-size: cover;
+    height: 400px;
+}
+#backgroundCocktail{
+    background-image: url("../Project1/images/cocktails.jpg");
+    background-size: cover;
+    height: 400px;
+}
+h1{
+    font-family: 'Merriweather', serif;
+    
+}
+p{
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+h6{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+   
+   
+.button{
+    background: black;
+    border-radius: 20px;
+}
+/* #container{
+    background: white;
+} */
+/* #food-button-storage{
+    
+    background: black;
+    border-radius: 20px;
+
+} */
+/* .back{
+    color: black;
+    background-color:white;
+} */
+/* #ingridients-div{
+  
+    color: black;
+    background-color: black;
+} */
+#cocktail-button-storage{
+    background: black;
+    border-radius: 20px;
+}
+/*  .grid-container{
+    background-color:white;
+}
+
+#ingredients-div{
+    color:white;
+    background-color: white;
+} 
+ */
+ h3{
+     color: black;
+     font-family: 'Merriweather', serif;
+ }
+ h2{
+    color: black;
+    font-family: 'Merriweather', serif;
+ }
+ .callout{
+     background-color: black;
+     color: white;
+ }
+ img{
+     text-align: center;
+ }

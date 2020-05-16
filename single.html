@@ -4,15 +4,17 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
     <title>Dinner Time</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="four-up-feature.css">
+    <link rel="stylesheet" type="text/css" href="recipes.css"-->
     
   </head>
 
   <body>
-    
-
+   
     <div class="top-bar">
       <div class="top-bar-right">
         <ul class="dropdown menu" data-dropdown-menu>
@@ -21,15 +23,30 @@
           </li>
           <li><a href="recipe.html">Recipes</a></li>
           <li><a href="coctails2.html">Cocktails</a></li>
-          <li><a href="about.html">About</a></li>
-        
-        </ul>
+         </ul>
       </div>
       </div>
     </div>
 
-      
-    
+
+ 
+    <section class="four-up-feature">
+        <div class="row four-up-feature-header align-center">
+          <div id="title" ></div>
+        </div> 
+       <!--  <div id="spoonacular-ingredient-vis-grid" style="align-content: center;"></div>
+      </section>  -->
+
+      <div class="grid-x grid-margin-x">
+        <div class="cell large-2"></div>
+        <div class="cell large-8"><div id="spoonacular-ingredient-vis-grid" style="align-content: center;"></div>
+      </section></div>
+        <div class="cell large-2"></div>
+      </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <script src="./single.js"></script>
   </body>
 </html>
